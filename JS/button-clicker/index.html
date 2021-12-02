@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Button Clicker</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<nav>
+			<h1>Dojonary</h1>
+			<input type="text" name="Search" id="Search" placeholder="Search">
+			<button type="submit" name="Login" onclick="changeText(this)">Login</button>
+		</nav>
+		<div class="col-1">
+			<div class="card">
+				<div>
+					<h3>ninja</h3>
+					<p class="noun">noun</p>
+					<p>Plural: <em>ninjas</em></p>
+					<button type="submit" onclick="alert('hello')">13 Likes</button>
+				</div>
+				<div class="definition">
+					<p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+				</div>
+			</div>
+			<div class="add-def">
+				<h3>Dojonary is defined by <strong>YOU</strong></h3>
+				<button type="submit" onclick="removeAddButton(this)">Add Definition</button>
+			</div>
+		</div>
+		<div class="col-2">
+			<div class="card">
+				<div>
+					<h3>ninja</h3>
+					<p class="noun">noun</p>
+					<p>Plural: <em>ninjas</em></p>
+					<button type="submit">37 Likes</button>
+				</div>
+				<div class="definition">
+					<p>A <a href="#">Programmer</a>who breaks down problems with <a href="#">zen</a>-like focus</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+  width: 50%;
+  margin: 0 auto;
+  /* border: 2px black solid; */
+}
+
+/* TOP NAV BAR */
+
+nav {
+  background-color: lightsteelblue;
+  color: black;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-evenly;
+}
+nav h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+nav input {
+  font-size: 1.6em;
+  width: 40%;
+}
+nav button {
+  background-color: blue;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.644);
+  color: white;
+  font-size: 1.6em;
+  width: 10%;
+  margin-left: 30px;
+}
+
+/* CARDS */
+.col-1 {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  display: flex;
+  border: 2px black solid;
+  width: 61%;
+  padding: 20px;
+  margin: 20px 0;
+  line-height: 2em;
+  flex: 2;
+}
+.card h3 {
+  font-size: 24pt;
+  font-weight: bold;
+}
+.noun {
+  font-style: italic;
+}
+.card p {
+  font-size: 16pt;
+}
+.definition {
+  align-self: center;
+  margin-left: 40px;
+}
+.card button {
+  background-color: rgb(216, 216, 101);
+  font-size: 12pt;
+  box-shadow: 3px 3px 3px black;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* ADD DEFINITION BLOCK */
+
+.add-def {
+  border: 2px black solid;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px 0 20px 60px;
+}
+.add-def h3 {
+  font-size: 1.6em;
+  margin: 10px 0 40px 0;
+}
+.add-def h3 strong {
+  font-weight: bold;
+}
+.add-def button {
+  font-size: 16pt;
+  box-shadow: 3px 3px 3px black;
+  background-color: rgba(23, 139, 23, 0.774);
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* BOTTOM LEFT CARD */
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+}

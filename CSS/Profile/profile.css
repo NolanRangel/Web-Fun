@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Domine", serif;
+}
+
+/* NAV BAR */
+
+.nav {
+  background-color: rgb(51 51 51);
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding-left: 20px;
+  justify-content: space-around;
+}
+.nav-title {
+  color: white;
+  font-size: 3em;
+}
+.nav-menu {
+  margin-left: 40%;
+}
+.nav-links {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+.nav-links li a:hover {
+  color: tomato;
+}
+.btn {
+  background-color: rgb(23 162 184);
+  box-shadow: 5px 5px 4px rgba(255, 99, 71, 0.472);
+  font-size: 1.6em;
+  border-radius: 5px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+/* PROFILE CARD */
+
+.new-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#wrapper {
+  border: 5px rgba(128, 128, 128, 0.377) solid;
+  height: auto;
+  margin: 0 auto;
+  flex: 2;
+  margin-right: 100px;
+}
+.header {
+  background-color: rgb(23 162 184);
+  height: 100px;
+}
+.container {
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 0 10px 40px;
+  position: relative;
+  top: -60px;
+}
+.img1 {
+  border: 5px rgba(128, 128, 128, 0.664) solid;
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  margin: 5px;
+}
+.name {
+  font-size: 2.5em;
+  margin-left: 5px;
+}
+.marker {
+  display: flex;
+}
+.img2 {
+  width: 7%;
+  margin: 10px;
+}
+.location {
+  align-self: center;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.about {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 5px;
+}
+#footer {
+  /*FOOTER FOR PROFILE CARD*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  top: -60px;
+}
+#footer img {
+  width: 25%;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+/* CONNECTION REQUESTS  */
+
+.cr {
+  border: 5px rgba(128, 128, 128, 0.664) solid;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-self: flex-start;
+  flex: 1;
+}
+.cr-header {
+  display: inline-flex;
+  min-height: 55px;
+  background-color: rgb(51 51 51);
+}
+.cr-number {
+  background-color: rgb(23 162 184);
+  border-radius: 50%;
+  padding: 15px;
+  margin: 15px 0 15px 10px;
+}
+.cr-text {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white;
+}
+.connection-container {
+  display: inline-flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.connection-container img {
+  width: 15%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.connection-container p {
+  padding-right: 40px;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* EDUCATION */
+
+.education {
+  border: 5px rgba(128, 128, 128, 0.664) solid;
+  height: fit-content;
+  display: flex;
+  margin: 0 auto;
+  margin-right: 90px;
+  flex-direction: column;
+  align-self: flex-start;
+  flex: 2;
+}
+.ed-header {
+  background-color: rgb(51 51 51);
+  min-height: 55px;
+}
+.ed-text {
+  color: white;
+  margin: 20px;
+  font-size: 1.6em;
+}
+.credentials {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+.credentials h2 {
+  margin: 20px;
+}
+.credentials p {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* YOUR CONNECTIONS */
+
+.yc {
+  border: 5px rgba(128, 128, 128, 0.664) solid;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  top: -200px;
+}
+.yc-header {
+  background-color: rgb(51 51 51);
+  display: inline-flex;
+  min-height: 35px;
+}
+.yc-number {
+  background-color: rgb(23 162 184);
+  width: 60px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 15px 0 15px 15px;
+}
+.yc-text {
+  color: white;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+.yc-connection-container {
+  display: inline-flex;
+  margin: 10px;
+}
+.yc-connection-container img {
+  width: 15%;
+  border-radius: 50%;
+  margin: 10px;
+}
+.yc-connection-container p {
+  align-self: center;
+  margin-left: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.footer {
+  border-top: 5px rgba(128, 128, 128, 0.664) solid;
+  padding: 10px;
+}

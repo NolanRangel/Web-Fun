@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DojoWeather</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="nav">
+			<h1 class="nav-title">DojoWeather</h1>
+			<div class="nav-menu">
+				<ul class="nav-links">
+					<li><a href="#" onclick="alert('Loading weather report...')">Burbank</a></li>
+					<li><a href="#" onclick="alert('Loading weather report...')">Chicago</a></li>
+					<li><a href="#" onclick="alert('Loading weather report...')">Dallas</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div id="container">
+		<div class="location">
+			<h2 class="main-location">San Jose</h2>
+			<div class="temp-conv">
+				<p>show temperaure in </p>
+				<select name="temp" id="temp-opt" onchange="tempConverter(this)">
+					<option value="f" class="temp-f">°F</option>
+					<option value="c" class="temp-c">°C</option>
+				</select>
+			</div>
+		</div>
+		<main class="tiles">
+			<div class="tile-list">
+				<div class="tile">
+					<h4>Today</h4>
+					<img src="./images/some_rain.png" alt="rain-cloud">
+					<p>some rain</p>
+					<span>
+						<p class="temp1">24</p>
+						<p class="temp2">18</p>
+					</span>
+				</div>
+				<div class="tile">
+					<h4>Tomorrow</h4>
+					<img src="./images/some_sun.png" alt="sunshine">
+					<p>some sun</p>
+					<span>
+						<p class="temp1">27</p>
+						<p class="temp2">19</p>
+					</span>
+				</div>
+				<div class="tile">
+					<h4>Friday</h4>
+					<img src="./images/some_clouds.png" alt="some-clouds">
+					<p>some clouds</p>
+					<span>
+						<p class="temp1">21</p>
+						<p class="temp2">16</p>
+					</span>
+				</div>
+				<div class="tile">
+					<h4>Saturday</h4>
+					<img src="./images/some_sun.png" alt="sunshine">
+					<p>some sun</p>
+					<span>
+						<p class="temp1">26</p>
+						<p class="temp2">21</p>
+					</span>
+				</div>
+			</div>
+		</main>
+		<div class="pop-up">
+			<div class="window">
+				<img src="./images/cookie.png" alt="cookie">
+				<div class="disclaimer">
+					<h5>Stop! Cookie time</h5>
+					<p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social
+						media
+						features and to analyse our traffic. <a href="#"> Read more...</a></p>
+				</div>
+				<button class="btn" onclick="removeBtn('.pop-up')">I Accept</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

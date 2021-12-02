@@ -1,0 +1,141 @@
+<!-- MORENOTES -->
+
+<!-- If the name attribute is omitted, the value of the input field will not be sent at all. -->
+<!-- The ACTION attribute defines the action to be performed when the form is submitted. -->
+<!-- The TARGET attribute specifies where to display the response that is received after submitting the form. -->
+<!-- The METHOD attribute specifies the HTTP method to be used when submitting the form data. -->
+<!-- The <datalist> element specifies a list of pre-defined options for an <input> element. -->
+<!-- The <input> VALUE attribute specifies an initial value for an input field: -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Registration Form</title>
+</head>
+
+<body>
+	<div id="container">
+		<form action="#" target="_blank" autocomplete="on" id="form1">
+			<h1>Registration Form</h1>
+
+			<!-- FIRST NAME, LAST NAME (INPUT)(INPUT ID SHOULD EQUAL LABEL FOR) -->
+
+			<fieldset>
+				<legend>Name: </legend>
+				<label for="first-name">First Name: *</label>
+				<input type="text" name="first-name" id="first-name" placeholder="First name" required />
+				<br>
+				<br>
+				<label for="last-name">Last Name: *</label>
+				<input type="text" name="last-name" id="last-name" placeholder="Last name" required />
+			</fieldset>
+			<br>
+
+			<!-- EMAIL, PASSWORD, BIRTHDAY (INPUT) -->
+
+			<div>
+				<label for="email">Email Address: *</label>
+				<input type="email" name="email" id="email" placeholder="Required" required />
+			</div>
+			<br>
+			<div>
+				<label for="password">Confirm Password: *</label>
+				<input type="password" name="password" id="password" placeholder="Required" />
+			</div>
+			<br>
+			<div>
+				<label for="birthday">Birthday: </label>
+				<input type="date" name="birthday" id="birthday" required />
+			</div>
+			<br>
+			<div>
+				<label for="age">Age</label>
+				<input type="number" name="age" id="age" placeholder="Age" required>
+			</div>
+			<br>
+			<div>
+				<p>Gender Identity:</p>
+			</div>
+
+			<!-- RADIO BUTTONS (CHECK W3SCHOOLS FOR PROPER SYNTAX FOR/ID) -->
+
+			<div>
+				<input type="radio" name="gender-identity" id="male" />
+				<label for="male">Male</label>
+				<input type="radio" name="gender-identity" id="female" />
+				<label for="female">Female</label>
+				<input type="radio" name="gender-identity" id="non-binary" />
+				<label for="non-binary">Non-binary</label>
+				<input type="radio" name="gender-identity" id="i-prefer-not-to-answer" />
+				<label for="i-prefer-not-to-answer">I prefer not to answer</label>
+			</div>
+
+			<!-- TEXT BOX AREA -->
+
+			<div>
+				<p>A short description about myself:</p>
+				<textarea name="description" id="description" cols="30" rows="5" placeholder="10 Max Characters"
+					maxlength="10"></textarea>
+			</div>
+
+			<!-- DROP DOWN LIST (LOOK INTO <datalist>) -->
+
+			<div>
+				<label for="favorite-language">Favorite Language: </label>
+				<select name="favorite-language" id="">
+					<option value="html">HTML</option>
+					<option value="css">CSS</option>
+					<option value="javascript">javascript</option>
+					<option value="python">Python</option>
+				</select>
+			</div>
+			<br>
+
+			<!-- CHECKBOX (CHECK W3SCHOOLS FOR PROPER SYNTAX FOR/NAME/ID) -->
+
+			<div>
+				<input type="checkbox" name="yes-updates" id="yes-updates" value="yes">
+				<label for="yes-updates">Yes, I would like to recieve periodic email updates</label>
+				<br>
+				<input type="checkbox" name="no-updates" id="no-updates" value="no">
+				<label for="no-updates">No, I would not like to recieve periodic email updates</label>
+			</div>
+			<br>
+
+			<!-- CHOOSE A FILE -->
+
+			<div>
+				<label for="myfile">Select a file: </label>
+				<input type="file" name="myfile" id="myfile">
+			</div>
+			<br>
+
+			<!-- SUBMIT/RESET BUTTONS -->
+
+			<div>
+				<input type="submit" value="Create Account">
+				<input type="reset" value="Reset Form">
+				<input type="button" value="More Options">
+			</div>
+			<br>
+			<footer>
+				<p>* Indicates a required field</p>
+			</footer>
+		</form>
+
+		<!-- An Input field outside of the form body but that still submits to the form (form id=form1) -->
+
+		<div>
+			<h2>An Input field outside of the form body but that still submits to the form (form attribute)</h2>
+			<label for="middle-name">Middle Name</label>
+			<input type="text" name="middle-name" id="middle-name" form="form1">
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Succulent Shop</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- MAIN WRAPPER -->
+
+	<div class="wrapper">
+
+		<!-- HEADER -->
+
+		<header class="header">
+			<img src="./images/leaf.png" alt="succulent-shop logo" class="logo">
+			<h1 class="title">EasyBay</h1>
+			<form action="search" class="search">
+				<input type="text" autocomplete="on" name="search-form" id="search-form"
+					placeholder="     Search for anything">
+				<label for="search-form" class="sign-in">Sign In</label>
+			</form>
+			<img src="./images/cart-dark.png" alt="shopping-cart" class="cart" onclick="alert('Your cart is empty')">
+		</header>
+
+		<!-- NAV BAR UNDERNEATH HEADER -->
+
+		<nav class="nav-bar">
+			<a href="#" class="nav-links">Aeonium</a>
+			<a href="#" class="nav-links">Andormischus</a>
+			<a href="#" class="nav-links">Agave</a>
+			<a href="#" class="nav-links">Aloe</a>
+			<a href="#" class="nav-links">Anacampseros</a>
+			<a href="#" class="nav-links">Aristaloe</a>
+			<a href="#" class="nav-links">More...</a>
+		</nav>
+
+		<!-- PAGE TITLE "YOUR SUCCULENT SOURCE" -->
+
+		<h2 class="page-title">Your Source for Serious Succulent Specialties</h2>
+
+		<!-- MAIN PAGE SHOWCASE -->
+
+		<div class="main">
+			<div class="discover">
+				<p class="discover-succulent">Discover succulent varieties one pot or rack at a time!</p>
+				<button type="submit">Discover <img src="./images/arrow-light.png" alt="discover-arrow"></button>
+			</div>
+			<img src="./images/succulents-1.jpg" alt="succulents-1" class="img1" onmouseover="imgSwap1('.img1')"
+				onmouseout="imgSwap2('.img1')">
+			<div class="soothing-aloe">
+				<img src="./images/aloe-m.jpg" alt="aloe-m" class="main-aloe">
+				<span class="soothing-aloe-btn">
+					<button type="submit">Soothing aloe <img src="./images/arrow-light.png"
+							alt="discover-arrow"></button>
+				</span>
+			</div>
+		</div>
+
+		<!-- LOWER IMAGE SLIDE -->
+
+		<div class="image-slide">
+			<div class="slide">
+				<div class="names">
+					<img src="./images/aeonium-s.jpg" alt="aeonium-s">
+					<p>Aeonium</p>
+				</div>
+				<div class="names">
+					<img src="./images/aloe-s.jpg" alt="aloe-s">
+					<p>Aloe</p>
+				</div>
+				<div class="names">
+					<img src="./images/cactus-s.jpg" alt="cactus-s">
+					<p>Cactus</p>
+				</div>
+				<div class="names">
+					<img src="./images/echeveria-s.jpg" alt="echeveria-s">
+					<p>Echeveria</p>
+				</div>
+				<div class="names">
+					<img src="./images/sedum-s.jpg" alt="sedum-s">
+					<p>Sedium</p>
+				</div>
+				<div class="names">
+					<img src="./images/sempervivum-s.jpg" alt="sempervivum-s">
+					<p>Sempervivum</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- POP-UP WINDOW -->
+
+		<div class="pop-up">
+			<div class="window">
+				<img src="./images/alert-dark.png" alt="cookie">
+				<div class="disclaimer">
+					<p>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms
+						outlined in our <a href="#">cookie policy</a></p>
+				</div>
+				<button class="btn" onclick="removeBtn('.pop-up')">I Accept</button>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

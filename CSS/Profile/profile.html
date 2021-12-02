@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Profile</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="profile.css">
+
+</head>
+
+<body>
+
+	<!-- NAV BAR -->
+
+	<div class="nav">
+		<h1 class="nav-title">Profile</h1>
+		<div class="nav-menu">
+			<ul class="nav-links">
+				<li><a href="#">Home</a></li>
+				<li><a href="#" class="active">My Profile</a></li>
+				<li><a href="#">Find Connections</a></li>
+			</ul>
+			<button class="btn" onclick="signOut(this)">Sign Out</button>
+		</div>
+	</div>
+
+	<!-- PROFILE CARD -->
+
+	<div class="new-container">
+		<div id="wrapper">
+			<div class="header"></div>
+			<div class="container">
+				<img src="images/images/jane-m.jpg" alt="Jane Doe" class="img1">
+				<h1 class="name">Jane Doe</h1>
+				<div class="marker">
+					<img src="icons/icons/map-marker.png" alt="map-marker" class="img2">
+					<p class="location">Seattle</p>
+				</div>
+				<p class="about"> Developer | Engineer | Problem Solver</p>
+				<p class="about">Master of shadows and the Internet</p>
+			</div>
+			<footer id="footer">
+				<img src="icons/icons/gear.png" alt="gear">
+				<!-- FIRST EDIT -->
+				<a href="#" onclick="changeName('.name')">edit profile</a>
+			</footer>
+		</div>
+
+		<!-- CONNECTION REQUESTS -->
+
+		<div class="cr">
+			<div class="cr-header">
+				<p class="cr-number"><span id="cr-active">2</span></p>
+				<h3 class="cr-text">Connection Requests</h3>
+			</div>
+			<!-- IMAGES -->
+			<div class="connection-container">
+				<img src="images/images/todd-s.jpg" alt="todd-s">
+				<p>Todd E</p>
+				<!-- SECOND EDIT -->
+
+				<img src="icons/icons/accept-circle.png" alt="accept-circle" class="icon"
+					onclick="removeUser('.connection-container')">
+
+				<img src="icons/icons/close-circle.png" alt="close-circle" class="icon"
+					onclick="removeUser('.connection-container')">
+			</div>
+
+			<div class="connection-container">
+				<img src="images/images/phil-s.jpg" alt="phil-s">
+				<p>Phil K</p>
+				<!-- SECOND EDIT -->
+				<img src="icons/icons/accept-circle.png" alt="accept-circle" class="icon"
+					onclick="removeUser('.connection-container')">
+				<img src="icons/icons/close-circle.png" alt="close-circle" class="icon"
+					onclick="removeUser('.connection-container')">
+			</div>
+		</div>
+	</div>
+
+	<!-- EDUCATION -->
+
+	<div class="new-container">
+		<div class="education">
+			<div class="ed-header">
+				<h3 class="ed-text">Education</h3>
+			</div>
+			<div class="credentials">
+				<h2>Coding Dolo - Full Stack Bootcamp</h2>
+				<p>Dec 2019 - march 2020</p>
+				<p>Triple black belt in Python, MERN, and C#</p>
+			</div>
+		</div>
+
+		<!-- YOUR CONNECTIONS  -->
+
+		<div class="yc">
+			<div class="yc-header">
+				<p class="yc-number"><span id="yc-active">500</span>+</p>
+				<h3 class="yc-text">Your Connections</h3>
+			</div>
+			<div class="yc-connection-container">
+				<img src="images/images/adrien-s.jpg" alt="adrien-s">
+				<p>Adrien D</p>
+			</div>
+			<div class="yc-connection-container">
+				<img src="images/images/anne-s.jpg" alt="anne-s">
+				<p>Anne J</p>
+			</div>
+			<div class="yc-connection-container">
+				<img src="images/images/alayne-s.jpg" alt="alayne-s">
+				<p>Alayne T</p>
+			</div>
+			<div class="yc-connection-container">
+				<img src="images/images/arry-s.jpg" alt="arry-s">
+				<p>Arry Y</p>
+			</div>
+			<div class="footer">
+				<a href="#">View More</a>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</div>
+
+
+
+</body>
+
+</html>

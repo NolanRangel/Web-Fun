@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN WRAPPER */
+
+.wrapper {
+  width: 970px;
+  margin: auto;
+}
+
+/* HEADER */
+
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  background-color: #00bbb6;
+  height: auto;
+  margin: 20px;
+  border-radius: 15%;
+}
+.title {
+  width: fit-content;
+  font-size: 2.5em;
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+#search-form {
+  width: 400px;
+  height: 35px;
+  border: 1px solid #acabac;
+  background-color: #f5f4f6;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.sign-in {
+  margin-left: 60px;
+  font-size: 1.4em;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sign-in:hover {
+  color: tomato;
+}
+.cart {
+  margin-left: 65px;
+  width: 5%;
+  height: auto;
+  cursor: pointer;
+}
+
+/* NAV BAR UNDERNEATH HEADER */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  margin: 0 20px;
+  padding-bottom: 20px;
+  border-bottom: 4px solid black;
+}
+.nav-bar a {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar a:hover {
+  color: tomato;
+}
+
+/* PAGE TITLE "YOUR SUCCULENT SOURCE */
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  font-size: 2.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+/* MAIN PAGE SHOWCASE */
+/* LEFT SIDE MAIN PAGE */
+
+.main {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+.discover {
+  border: 2px solid black;
+  background-color: #00bbb4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  padding-left: 30px;
+  border: none;
+  width: 100%;
+  height: 350px;
+  font-size: 1.6em;
+}
+.discover-succulent {
+  word-wrap: break-word;
+  padding: 55px 20px 0 20px;
+}
+.discover button {
+  background-color: #00bbb4;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100px;
+  gap: 10px;
+  padding-top: 40px;
+  padding-left: 40px;
+  margin-top: 30px;
+  border: none;
+  font-size: 1em;
+}
+.discover img {
+  width: 17%;
+}
+
+/* RIGHT SIDE MAIN PAGE */
+
+.soothing-aloe {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-left: 20px;
+}
+.main-aloe {
+  margin-bottom: 20px;
+}
+.soothing-aloe button {
+  background-color: #00bbb4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100px;
+  gap: 10px;
+  padding-left: 30px;
+  border: none;
+  font-size: 1.3em;
+}
+.soothing-aloe-btn img {
+  width: 15%;
+}
+
+/* LOWER IMAGE SLIDE */
+
+.image-slide {
+  background-color: #aeeae9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  margin-top: 20px;
+}
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.slide img {
+  width: 80%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.names p {
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* POP-UP WINDOW */
+
+.pop-up {
+  border: 4px solid black;
+  background-color: #eeeeee;
+  position: fixed;
+  width: 890px;
+  height: 100px;
+  top: 820px;
+  left: calc(50% - 445px);
+}
+.window {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.window img {
+  padding: 20px;
+  width: 10%;
+  height: auto;
+}
+.window h5 {
+  font-size: 1.4em;
+  margin: 0 10px 10px;
+}
+.window p {
+  font-weight: bold;
+  word-wrap: break-word;
+  margin-left: 10px;
+}
+.btn {
+  margin-right: 40px;
+  width: 15%;
+  font-size: 1.6em;
+  color: white;
+  background-color: #00bbb5;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+.btn:hover {
+  color: tomato;
+}

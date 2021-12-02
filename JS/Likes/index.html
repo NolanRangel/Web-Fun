@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Link</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header class="header">
+			<h2>Network</h2>
+		</header>
+		<h1>Your Feed</h1>
+		<div class="main-page">
+			<div class="container">
+				<div class="user">
+					<div class="user-card">
+						<img src="/CSS/user-card/user-circle.png" alt="">
+						<a href="#">Add an avatar</a>
+						<p>James Doe</p>
+					</div>
+				</div>
+			</div>
+			<div class="container2">
+				<div class="updates-main">
+					<section class="updates">
+						<span class="content">
+							<h4 class="name">Neil M</h4>
+							<p class="likes"><span id="like1">0</span> Like(s)</p>
+							<button class="btn" onclick="addLike('#like1')"> Like</button>
+						</span>
+						<span>
+							<p class="description">I just set up this new discord bot, let me know what you all think.
+								<a href="#">link</a>
+							</p>
+						</span>
+					</section>
+					<section class="updates">
+						<span class="content">
+							<h4 class="name">Nichole K</h4>
+							<p class="likes"><span id="like2">0</span> Likes(s)</p>
+							<button class="btn" onclick="addLike('#like2')">Like</button>
+						</span>
+						<span>
+							<p class="description">Just finished my <a href="#">next comic</a>, check it out.</p>
+						</span>
+					</section>
+					<section class="updates">
+						<span class="content">
+							<h4 class="name">Jim R</h4>
+							<p class="likes"><span id="like3">0</span> Likes(s)</p>
+							<button class="btn" onclick="addLike('#like3')"> Like</button>
+						</span>
+						<span>
+							<p class="description">I can't stop listening to the <a href="#">new album</a>. Who is
+								liking
+								it?
+							</p>
+						</span>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+/* NOTES */
+/* REMEMBER TO SELECT CLOSEST PARENT IN ORDER TO FLEX ITEMS! */
+/* REMEMBER YOUR WIDTHS AND HEIGTHS */
+
+/* FLEX CONTAINER PROPERTIES */
+/* flex-direction -(ROWS/COLUMNS)
+  flex-wrap       -(USED TO WRAP IF NOT ENOUGH ROOM ON LINE)
+  flex-flow       -(SHORTHAND FOR FLEX-DIRECTION & FLEX-WRAP EX. 'ROW WRAP')
+  justify-content -(CENTERS ACROSS THE X-AXIS)
+  align-items     -(CENTERS ACROSS THE Y-AXIS)
+  align-content   -(USED TO ALIGN SPACING BETWEEN LINES)
+                  -(SAME VALUES AS JUSTIFY CONTENT)
+                  -(STRETCH VALUE STRETCHES THE CONTAINER TO FILL 
+                    REMAINING SPACE)
+*/
+/* FLEX ITEM PROPERTIES */
+/* 
+  order        -(SPECIFIES ORDER OF ITEMS)(REARRANGE ITEMS WITHIN CONTAINER)
+  flex-grow    -(GROW SPECIFIC ITEMS/ VALUE MUST BE A NUMBER/ DEFAULT=0)
+  flex-shrink  -(SHRINK ITEMS/ VALUE MUST BE A NUMBER/ DEFAULT=0)
+  flex-basis   -(SPECIFIES LENGTH OF A FLEX ITEM)(INLINE HTML??)
+  flex         -(SHORTHAND FOR GROW/SHRINK/BASIS(IN PX OR %))
+               -(PROPERTIES CODED IN ORDER AS LISTED)
+  align-self   -(SPECIFIES ALIGNMENT FOR THE SELECTED ITEM)
+               -(OVERRIDES THE DEFAULT ALIGNMENT SET BY ALIGN-ITEMS)
+*/
+
+/* 
+      ------------> LOOK INTO FLEX RESPONSIVE MORE  <-------------
+*/
+
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  height: 200px;
+}
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+  height: fit-content;
+  border: 2px black solid;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.294);
+  background-color: blanchedalmond;
+}
+.container {
+  height: fit-content;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+#header {
+  text-align: center;
+  font-size: 3.5em;
+  padding: 20px;
+}
+
+/* ROWS */
+
+.row1 {
+  /* border: 2px black solid; */
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  background-color: lightskyblue;
+}
+.row2 {
+  /* border: 2px black solid; */
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+  background-color: coral;
+}
+.row3 {
+  /* border: 2px black solid; */
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  background-color: darkseagreen;
+}
+
+/* FOOTER */
+
+#footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
